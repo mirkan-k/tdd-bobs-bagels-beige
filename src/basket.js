@@ -122,9 +122,10 @@ class Basket {
 }
 const basket = new Basket(100)
 console.log(basket.addBagel('BGLO', 4))
-console.log(basket.addBagel('BGLP', 15))
-console.log(basket.addBagel('BGLE',7))
-console.log(basket.addBagel('COF',3))
+console.log(basket.addBagel('BGLP', 1))
+// console.log(basket.addBagel('BGLP', 15))
+// console.log(basket.addBagel('BGLE',7))
+// console.log(basket.addBagel('COF',3))
 console.log(basket.countBagelsInBasket())
 console.log(basket.getTotal())
 

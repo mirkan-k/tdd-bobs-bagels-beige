@@ -30,6 +30,16 @@ describe("Basket", () => {
         expect(result).toEqual(expected);
     });
 
+    it("adding negative items does not add or take away from basket", () => {
+
+        basket.addBagel("BGLO")
+        const expected = [new Bagel("BGLO", 1)]
+
+        const result = basket.addBagel("BGLO", -1)
+
+        expect(result).toEqual(expected);
+    });
+
     it("remove item from basket", () => {
 
         const expected = []
